@@ -1,5 +1,5 @@
 {
-  "name": "universal-profanity-checker",
+  "name": "react-native-profanity-checker",
   "version": "1.0.0",
   "description": "A lightweight profanity checking library for Node.js and React/React Native",
   "keywords": [
