@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 class ProfanityCheck {
   constructor(config) {
@@ -35,7 +36,9 @@ class ProfanityCheck {
   }
 
   async getLanguageFile(language) {
-    const dataFolderPath = path.join(process.cwd(), 'data'); // Use process.cwd() instead of __dirname
+    const currentFilePath = fileURLToPath(import.meta.url);
+    const dataFolderPath = path.join(path.dirname(currentFilePath), 'data');
+    // const dataFolderPath = path.join(process.cwd(), 'data'); // Use process.cwd() instead of __dirname
     const languageFilePath = path.join(dataFolderPath, `${language}.txt`);
     const doesFileExists = await this.doesFileExists(languageFilePath);
 
