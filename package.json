@@ -1,6 +1,6 @@
 {
   "name": "react-native-profanity-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight profanity checking library for Node.js and React/React Native",
   "keywords": [
     "profanity",
@@ -19,10 +19,6 @@
   },
   "author": "Ashwin",
   "license": "MIT",
-  "dependencies": {
-    "fs": "^3.0.3",
-    "path": "^0.6.9",
-    "url": "^0.11.3"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
